@@ -4,3 +4,5 @@ auth-private-key-secret.yaml
 catalog-secret.yaml
 
 order-secret.yaml
+
+notification-secret.yaml
