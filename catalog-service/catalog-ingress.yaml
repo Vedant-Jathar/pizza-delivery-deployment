@@ -20,4 +20,4 @@ spec:
             service:
               name: catalog-service
               port:
-                number: 5503
+                number: 5502

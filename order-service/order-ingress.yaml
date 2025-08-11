@@ -20,4 +20,4 @@ spec:
             service:
               name: order-service
               port:
-                number: 5502
+                number: 5503
