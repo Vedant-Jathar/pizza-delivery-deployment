@@ -5,7 +5,7 @@ metadata:
   labels:
     app: auth-service
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       app: auth-service
@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: auth-container
-        image: vedantjathar/mernspace-c-auth-service:build-4
+        image: vedantjathar/mernspace-c-auth-service:build-5
         ports:
         - containerPort: 5501
         volumeMounts:
