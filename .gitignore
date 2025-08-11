@@ -6,3 +6,4 @@ catalog-secret.yaml
 order-secret.yaml
 
 notification-secret.yaml
+ws-secret.yaml
