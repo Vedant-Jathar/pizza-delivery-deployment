@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: auth-container
-        image: vedantjathar/mernspace-c-auth-service:build-10
+        image: vedantjathar/mernspace-c-auth-service:build-11
         ports:
         - containerPort: 5501
         volumeMounts:
