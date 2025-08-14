@@ -12,15 +12,19 @@ metadata:
     nginx.ingress.kubernetes.io/proxy-set-headers: |
       Upgrade: $http_upgrade
       Connection: "Upgrade"
+    nginx.ingress.kubernetes.io/enable-cors: "true"
+    nginx.ingress.kubernetes.io/cors-allow-origin: "https://admin.pizzify.store"
+    nginx.ingress.kubernetes.io/cors-allow-methods: "GET, POST, OPTIONS"
+    nginx.ingress.kubernetes.io/cors-allow-credentials: "true"
 spec:
   ingressClassName: nginx
   rules:
-    - http:
-        paths:
-          - path: /socket.io(/|$)(.*)
-            pathType: ImplementationSpecific
-            backend:
-              service:
-                name: ws-service
-                port:
-                  number: 5504
+  - http:
+      paths:
+      - path: /socket.io(/|$)(.*)
+        pathType: ImplementationSpecific
+        backend:
+          service:
+            name: ws-service
+            port:
+              number: 5504
