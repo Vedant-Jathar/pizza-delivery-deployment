@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: notification-container
-          image: vedantjathar/mernspace-c-notification-service:build-4
+          image: vedantjathar/mernspace-c-notification-service:build-5
           ports:
             - containerPort: 5505
           volumeMounts:
