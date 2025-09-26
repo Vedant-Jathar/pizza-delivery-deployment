@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: catalog-container
-          image: vedantjathar/mernspace-c-catalog-service:build-9
+          image: vedantjathar/mernspace-c-catalog-service:build-10
           ports:
             - containerPort: 5502
           volumeMounts:
